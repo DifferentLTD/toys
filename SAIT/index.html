@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игрушечный Каталог</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div id="easter-egg" style="display:none;"></div>
+  
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" title="Переключить тему">
+    <span class="theme-icon">🌙</span>
+  </button>
+  
+  <header id="main-header">
+    <div class="header-content">
+      <nav class="header-nav">
+        <a href="#catalog-app">Каталог игрушек</a>
+        <a href="#download-section">Скачать приложения</a>
+        <a href="#troubleshooting">Проблемы с установкой</a>
+        <a href="#excel-download">Скачать Excel-шаблон</a>
+        <a href="#author-info">Об авторе</a>
+      </nav>
+    </div>
+  </header>
+  <div id="main-content">
+    <div id="site-title">
+      <span class="welcome-text">Добро пожаловать на сайт для скачивания приложения "Каталог игрушек"!</span>
+      <a id="download-app" href="downloads/app.apk" title="Скачать приложение" download>⬇ Скачать приложение</a>
+    </div>
+    <div id="site-desc">
+      Это приложение — интерактивный каталог игрушек. <br>
+      <ul>
+        <li>Загрузите свою таблицу Excel с игрушками</li>
+        <li>Редактируйте, добавляйте и удаляйте строки</li>
+        <li>Сортируйте и группируйте игрушки по категориям</li>
+        <li>Удобный поиск и фильтрация</li>
+        <li>Минималистичный и интуитивный интерфейс</li>
+      </ul>
+      <span class="info-note">Все данные остаются только у вас — приватность гарантирована.</span>
+    </div>
+    <section id="catalog-app" class="app-section">
+      <h2>Каталог игрушек</h2>
+      <p>Позволяет загружать, просматривать и редактировать вашу коллекцию игрушек из Excel-файла. Можно добавлять, удалять, сортировать и фильтровать записи, а также сохранять изменения. Интерфейс интуитивный и минималистичный.</p>
+    </section>
+    <section id="download-section" class="app-section">
+      <h2>Скачать приложения</h2>
+      <div class="download-links">
+        <a id="download-mobile" href="downloads/app.apk" class="download-btn" download>Скачать для Android</a>
+        <a id="download-pc" href="downloads/app.exe" class="download-btn" download>Скачать для ПК</a>
+      </div>
+    </section>
+    <section id="troubleshooting" class="app-section">
+      <h2>Проблемы с установкой?</h2>
+      <p>Если EXE файл не запускается или возникают проблемы с установкой, следуйте указаниям ниже:</p>
+      <div class="troubleshooting-content">
+        <div class="troubleshooting-text">
+          <p>📋 <strong>Инструкция по установке:</strong></p>
+          <ul>
+            <li>Скачайте скриншот и поместите его в файл с EXE файлом</li>
+            <li>Запустите приложение</li>
+            <li>Если проблемы остаются, обратитесь к разработчику</li>
+          </ul>
+        </div>
+        <a id="download-screenshot" href="downloads/Screenshot_6.png" class="download-btn troubleshooting-btn" download>
+          📸 Скачать скриншот
+        </a>
+      </div>
+    </section>
+    <section id="excel-download" class="app-section">
+      <h2>Скачать Excel-шаблон</h2>
+      <p>Скачайте шаблон Excel для загрузки вашей коллекции игрушек. Вы можете использовать его для импорта и экспорта данных.</p>
+      <a class="download-btn" href="downloads/excel.xlsx" download>Скачать шаблон Excel</a>
+    </section>
+    <footer id="main-footer">
+      <section id="author-info">
+        <div class="footer-content">
+          <span>Разработчик: Москаленко Кирилл Олегович</span> |
+          <span>Тел.: 8&nbsp;913&nbsp;309-12-40</span> |
+          <span>Группа: ИС-931</span> |
+          <span>Email: <a href="mailto:moskalenkokriill27062007@gmail.com">moskalenkokriill27062007@gmail.com</a></span>
+        </div>
+      </section>
+    </footer>
+    <div id="fact-box"></div>
+  </div>
+  <audio id="hover-sound" src="hover.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html> 
